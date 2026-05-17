@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LFC Fan Hub — unofficial Liverpool FC stories for supporters.">
-  <title>LFC Fan Hub — Home</title>
+  <meta name="description" content="LFC Fan Hub ??unofficial Liverpool FC stories for supporters.">
+  <title>LFC Fan Hub ??Home</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">
-      <span class="brand-mark">LFC Fan Hub</span>
-      <span class="brand-sub">Unofficial supporter site</span>
-    </a>
-    <nav class="site-nav" aria-label="Main">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">LFC Fan Hub</span>
+        <span class="brand-sub">Unofficial supporter site</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav id="main-nav" class="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main class="shell">
@@ -26,7 +33,7 @@
         <p class="hero-eyebrow">You'll Never Walk Alone</p>
         <h1 id="hero-title">Stories from the Kop</h1>
         <p class="hero-lede">
-          A fan-made corner of the internet for Liverpool FC — short reads on the ground,
+          A fan-made corner of the internet for Liverpool FC ??short reads on the ground,
           the song, and following the season. Not affiliated with the club.
         </p>
         <a class="hero-cta" href="about.html">Why this site exists</a>
@@ -46,7 +53,7 @@
     </div>
 
     <div class="story-grid">
-      <a class="story-card" href="story-anfield.html">
+      <a class="story-card" href="story-anfield.html" aria-label="Read article: Anfield: More Than a Stadium">
         <img
           class="story-card__img"
           src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800&q=80"
@@ -60,10 +67,11 @@
           <h3>Anfield: More Than a Stadium</h3>
           <p class="excerpt">Why this ground matters to supporters around the world.</p>
           <span class="meta">5 min read</span>
+          <span class="read-more">Read more</span>
         </div>
       </a>
 
-      <a class="story-card" href="story-ynwa.html">
+      <a class="story-card" href="story-ynwa.html" aria-label="Read article: You'll Never Walk Alone">
         <img
           class="story-card__img"
           src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80"
@@ -77,10 +85,11 @@
           <h3>You'll Never Walk Alone</h3>
           <p class="excerpt">The anthem, the pre-match moment, and what it means to fans.</p>
           <span class="meta">4 min read</span>
+          <span class="read-more">Read more</span>
         </div>
       </a>
 
-      <a class="story-card" href="story-season.html">
+      <a class="story-card" href="story-season.html" aria-label="Read article: Following 2024-25">
         <img
           class="story-card__img"
           src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&q=80"
@@ -91,9 +100,10 @@
         >
         <div class="story-card__body">
           <span class="tag">Season</span>
-          <h3>Following 2024–25</h3>
+          <h3>Following 2024?25</h3>
           <p class="excerpt">A supporter's notes on highs, lows, and watching every week.</p>
           <span class="meta">6 min read</span>
+          <span class="read-more">Read more</span>
         </div>
       </a>
     </div>
@@ -118,8 +128,9 @@
     </section>
   </main>
 
+  <script src="js/nav.js" defer></script>
   <footer class="site-footer">
-    <p>Unofficial fan project for IY4103 Web Development — not affiliated with Liverpool FC.</p>
+    <p>Unofficial fan project for IY4103 Web Development ??not affiliated with Liverpool FC.</p>
     <p><a href="contact.html">Interested? Get in touch</a></p>
   </footer>
 </body>
