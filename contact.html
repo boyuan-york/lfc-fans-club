@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the owner of LFC Fan Hub.">
+  <title>Contact — LFC Fan Hub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">LFC Fan Hub</span>
+      <span class="brand-sub">Unofficial supporter site</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="shell shell--narrow">
+    <article class="card">
+      <h1>Get in touch</h1>
+      <p class="contact-intro">
+        Interested in this site, Liverpool FC, or just want to say hello? Send a message below.
+        I will read every submission made through this form.
+      </p>
+
+      <div id="form-status" class="form-status" role="status" aria-live="polite" hidden></div>
+
+      <form id="contact-form" novalidate>
+        <p class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </p>
+        <p class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </p>
+        <p class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </p>
+        <button type="submit" class="btn-primary" id="submit-btn">Send message</button>
+      </form>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Unofficial fan project for IY4103 Web Development — not affiliated with Liverpool FC.</p>
+  </footer>
+
+  <script type="module" src="js/contact.js"></script>
+</body>
+</html>
